@@ -1,7 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root {
+    --color-champagne-pink: rgb(250, 233, 226);
+    --color-catawba: rgb(102, 48, 62);
+    --color-jet: rgb(43, 43, 43);
+    --color-white: rgb(254, 253, 255);
+    --font-headline: "PT Serif", serif;
+    --font-main: "IBM Plex Sans", sans-serif;;
+}
+
 html {
     scroll-behavior: smooth;
+    color: var(--color-jet);
+    font-size: 0.95rem;
   }
 
-.pink {
-    background-color: pink;
+  h1, h2, h3, h4, h5 {
+      font-family: var(--font-headline);
+      font-size: 1.6rem;
+  }
+
+  p {
+      font-family: var(--font-main);
+  }
+
+  .button {
+      background-color: var(--color-catawba);
+      border: 0;
+      color: var(--color-white);
+      border-radius: 25px;
+      padding: 12px 30px;
+      font-family: var(--font-main);
+      text-transform: uppercase;
+      line-height: 1.2;
+   }
+
+  .button:hover {
+      background-color: var(--color-champagne-pink);
+      border: 0;
+      color: var(--color-jet);
+  }
+
+.highlighted {
+    background-color: var(--color-champagne-pink);
+}
+
+.neutral {
+    background-color: var(--color-white);
+}
+
+.service {
+    border-radius: 0;
+    border: 0;
+    background: var(--color-white);
+    font-family: var(--font-main);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.highlighted-card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
