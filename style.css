@@ -90,6 +90,10 @@ footer .navigation-bottom ul li {
     color: var(--color-white);
 }
 
+#kontakt a {
+    color: var(--color-catawba);
+}
+
 .logo {
     padding: 92px 0 0 0;
     overflow: hidden;
